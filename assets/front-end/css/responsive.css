@@ -1,0 +1,168 @@
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+ 
+ 
+/*==========  Mobile First Method  ==========*/
+ 
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    font-size: 18px !important;
+}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+		.menuzord .showhide em{
+		background:#fff !important;
+	}
+	.modern-header .header-nav .header-nav-wrapper {
+    position: absolute;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+
+
+/*==========  Non-Mobile First Method  ==========*/
+ 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	.menuzord-menu > li > a {
+    padding: 13px 12px !important;
+    margin-right: 0px !important;
+}
+.media-left, .media>.pull-left {
+    padding-right: 10px;
+    height: 332px;
+}
+.mt-30 {
+    padding-top: 77px !important;
+}
+div#border-custom-style {
+   height: 395px !important;
+}
+#why-us-border-custom-style2 {
+	height:520px;
+}
+.course-single-item.style2 .course-details {
+    position: relative;
+    height: 300px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+.man img {
+	margin-bottom:-30px;
+}
+	.menuzord .showhide em{
+		background:#fff !important;
+	}
+	.modern-header .header-nav .header-nav-wrapper {
+    position: absolute;
+}
+.media-left, .media>.pull-left {
+    padding-right: 10px;
+    height: 0px;
+}
+div#border-custom-style {
+    height: 230px !important;
+}
+#why-us-border-custom-style {
+    height: 380px;
+}
+#why-us-border-custom-style2 {
+    height: 250px !important;
+}
+#why-us-border-custom-style2 {
+    padding: 0px 20px;
+}
+.text-theme-colored {
+    padding-top: 15px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	#why-us-border-custom-style {
+    padding: 0 20px;
+    margin: 20px;
+}
+#why-us-border-custom-style2 {
+    margin: 20px;
+}
+a.about_bt {
+    margin-bottom: 20px;
+}
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 320px) {
+.line-bottom-double-line-centered {
+    font-size: 20px;
+}
+section > .container, section > .container-fluid {
+     padding-top: 0px; 
+    padding-bottom: 60px;
+}
+div#border-custom-style {
+    height: 260px !important;
+}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 1024px) {
+	.contact-section {
+    margin-top: -16%;
+}	
+}
+@media only screen and (max-width: 375px){
+	#custom-contact {
+    padding: 20px 30px 40px !important;
+}
+#why-us-border-custom-style {
+    height: 400px;
+
+#why-us-border-custom-style2 {
+    height: 520px !important;
+}
+.mt-30 {
+    padding-top: 0px !important;
+	margin-top:0px !important;
+}
+
+}
+@media only screen and (max-width: 414px){
+	#custom-contact {
+    padding: 40px 30px 40px !important;
+}
+#why-us-border-custom-style {
+    height: 475px;
+}
+#why-us-border-custom-style2 {
+    height: 610px !important;
+}
+#why-us-border-custom-style2 {
+    height: 520px !important;
+}
+.mt-30 {
+    padding-top: 0px !important;
+	margin-top:0px !important;
+}
+}

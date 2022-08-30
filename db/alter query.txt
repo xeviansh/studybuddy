@@ -1,0 +1,50 @@
+ALTER TABLE `manage_testdetails` ADD `timer` INT(60) NOT NULL AFTER `negative_mark`;
+
+
+ALTER TABLE `mange_package` ADD `instructor` INT(11) NOT NULL AFTER `image`;
+
+ALTER TABLE `mange_package` CHANGE `instructor` `instructor` VARCHAR(50) NOT NULL;
+
+
+ALTER TABLE `manage_testdetails` ADD `amount` VARCHAR(100) NOT NULL AFTER `timer`, ADD `payment_status` VARCHAR(100) NOT NULL AFTER `amount`, ADD `payment_id` VARCHAR(100) NOT NULL AFTER `payment_status`;
+
+
+ALTER TABLE `manage_my_course` ADD `purchase_type` VARCHAR(200) NOT NULL AFTER `student_id`;
+
+
+
+ALTER TABLE `manage_topic` ADD `file` VARCHAR(200) NOT NULL AFTER `description`;
+
+ALTER TABLE `users` ADD `attempt` INT(3) NOT NULL AFTER `last_login_ip`;
+
+ALTER TABLE `manage_quesion_hub` ADD `section_id` VARCHAR(10) NOT NULL AFTER `course_id`;
+
+#10/11/2021
+
+ALTER TABLE `question_bank` ADD `section_id` VARCHAR(50) NOT NULL AFTER `test_id`;
+
+ALTER TABLE `manage_testdetails` ADD `question_type` VARCHAR(11) NOT NULL AFTER `test_type`;
+
+ALTER TABLE `manage_answer_sheet` ADD `attempt_id` VARCHAR(11) NOT NULL AFTER `question_id`;
+
+ALTER TABLE `manage_my_course` CHANGE `test_id` `test_id` VARCHAR(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL;
+
+CREATE TABLE `studybuddy`.`attempt_details` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `test_id` VARCHAR(50) NOT NULL , `student_id` VARCHAR(50) NOT NULL , `date` VARCHAR(100) NOT NULL , `time` VARCHAR(100) NOT NULL , `cip` VARCHAR(200) NOT NULL , `cby` VARCHAR(200) NOT NULL , `updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+ALTER TABLE `question_bank` ADD `question_id` VARCHAR(50) NOT NULL AFTER `section_id`;
+
+#18/11/2021
+
+ALTER TABLE `manage_testdetails` ADD `interval_of_break` VARCHAR(100) NOT NULL AFTER `end_date`, ADD `time_of_break` VARCHAR(100) NOT NULL AFTER `interval_of_break`;
+----------------------------------------------------------------------------------------------------------------------------------------
+3/12/2021
+ALTER TABLE `manage_quesion_hub` ADD `expla_video` VARCHAR(100) NOT NULL AFTER `explanation`;
+
+ALTER TABLE `inquiry` CHANGE `ID` `ID` INT(11) NOT NULL AUTO_INCREMENT, add PRIMARY KEY (`ID`);
+ALTER TABLE `question_bank` ADD `expla_video` VARCHAR(100) NOT NULL AFTER `explanation`;
+
+12/13/2021
+-------------------------------------------------
+ALTER TABLE `mange_package` ADD `course_info` VARCHAR(255) NOT NULL AFTER `short_description`, ADD `mentor_info` VARCHAR(255) NOT NULL AFTER `course_info`;
+
